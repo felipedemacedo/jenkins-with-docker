@@ -3,7 +3,7 @@
 ## Before you ask
 
 Yes, it works !
-You can run docker commands inside a Jenkins docker container.
+You can run Docker commands inside a Jenkins Docker container.
 
 ![image](https://user-images.githubusercontent.com/7635127/58577459-e25dbd00-821c-11e9-819b-069a3896ff21.png)
 
