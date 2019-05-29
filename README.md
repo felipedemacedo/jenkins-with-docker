@@ -14,7 +14,8 @@ e.g.:
 mkdir /home/ubunt/jenkins
 
 Then run a script like this on terminal:
-`
+
+```java
 JENKINS_HOME=/home/ubuntu/jenkins
 
 sudo docker run -d \
@@ -26,11 +27,11 @@ sudo docker run -d \
 -v $JENKINS_HOME:/var/jenkins_home \
 -v $(which docker):/usr/bin/docker \
 felipederodrigues/jenkins:latest
-` 
+```
 
 ## Run as service
 
-`
+```java
 JENKINS_HOME=/home/ubuntu/jenkins
 
 sudo docker service create \
@@ -42,4 +43,4 @@ sudo docker service create \
 --mount type=bind,source=$(which docker),destination=/usr/bin/docker \
 --mount type=bind,source=$JENKINS_HOME,destination=/var/jenkins_home \
 felipederodrigues/jenkins:latest
-`
+```
